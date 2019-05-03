@@ -1,4 +1,4 @@
-package dte.alvaroluismartinez.camarastraficomadrid;
+package dte.alvaroluismartinez.finalapp;
 
 import org.junit.Test;
 

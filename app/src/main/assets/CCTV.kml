@@ -1,4 +1,4 @@
-﻿<kml xmlns="http://earth.google.com/kml/2.2">
+<kml xmlns="http://earth.google.com/kml/2.2">
   <Document>
     <NetworkLinkControl>
       <expires>onChange</expires>

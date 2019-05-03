@@ -1,4 +1,4 @@
-package dte.alvaroluismartinez.camarastraficomadrid;
+package dte.alvaroluismartinez.finalapp;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("dte.alvaroluismartinez.camarastraficomadrid", appContext.getPackageName());
+        assertEquals("dte.alvaroluismartinez.finalapp", appContext.getPackageName());
     }
 }

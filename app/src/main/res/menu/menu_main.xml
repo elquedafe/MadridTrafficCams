@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/order"
+        android:orderInCategory="300"
+        android:title="Ordenar nombres"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/refresh"
+        android:orderInCategory="300"
+        android:title="Recargar datos"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/location"
+        android:orderInCategory="300"
+        android:title="Mostrar localización"
+        app:showAsAction="never"
+        android:checkable="true"/>
+    <item
+        android:id="@+id/all"
+        android:orderInCategory="300"
+        android:title="Mostrar todas"
+        app:showAsAction="never"
+        android:checkable="true"/>
+    <item
+        android:id="@+id/cluster"
+        android:orderInCategory="300"
+        android:title="Mostrar todas (cluster)"
+        app:showAsAction="never"
+        android:checkable="true"/>
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/common_google_signin_btn_icon_light"
+        android:orderInCategory="300"
+        android:title="User2"
+        app:showAsAction="ifRoom"/>
+
+</menu>

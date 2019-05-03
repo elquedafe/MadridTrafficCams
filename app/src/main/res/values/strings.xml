@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">CamarasTraficoMadrid</string>
+    <string name="app_name">Traffic Madrid</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

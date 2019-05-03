@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,10 +9,41 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <include
+        android:id="@+id/my_toolbar"
+        layout="@layout/toolbar"
+    />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="354dp"
         android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:paddingLeft="1dp"
+                android:text="Búsqueda:" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:focusable="auto"
+                android:focusableInTouchMode="true"
+                android:inputType="textPersonName"
+                android:selectAllOnFocus="false" />
+        </LinearLayout>
 
         <ListView
             android:id="@+id/listaCamaras"
@@ -20,12 +53,15 @@
             android:headerDividersEnabled="true">
 
         </ListView>
+
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/salidaView"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="xkdjfnvkdjf" />
+        android:onClick="onClick_image"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
 
 </LinearLayout>
