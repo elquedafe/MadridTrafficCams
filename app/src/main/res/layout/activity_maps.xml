@@ -57,8 +57,9 @@
         android:layout_gravity="end|bottom"
         android:layout_margin="20dp"
         android:clickable="true"
+        android:backgroundTint="@color/madrid"
         android:onClick="onClick_Location"
-        android:src="@android:drawable/ic_menu_compass"
+        android:src="@mipmap/target"
         android:visibility="visible" />
 
 

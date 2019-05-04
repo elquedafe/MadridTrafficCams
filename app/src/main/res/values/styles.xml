@@ -3,14 +3,26 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/madrid</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="windowActionBar">false</item>
+
     </style>
-    <style name="HeaderBar">
-        <item name="android:background">@color/colorPrimary</item>
+    <style name="HeaderBar" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:background">@color/madrid</item>
         <item name="android:textColor">@color/wite</item>
         <item name="android:titleTextColor">@color/wite</item>
+        <item name="android:textColorSecondary">@color/wite</item>
+
+        <item name="android:colorControlActivated">@color/wite</item>
+        <item name="android:colorControlHighlight">@color/wite</item>
+        <item name="android:colorControlNormal">@color/wite</item>
+
+    </style>
+
+
+    <style name="SplashTheme" >
+        <item name="android:windowBackground">@drawable/background_splash</item>
     </style>
 </resources>

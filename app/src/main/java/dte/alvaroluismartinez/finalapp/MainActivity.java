@@ -39,6 +39,8 @@ import dte.alvaroluismartinez.finalapp.http.HttpTask;
 import dte.alvaroluismartinez.finalapp.http.HttpTaskImage;
 import dte.alvaroluismartinez.finalapp.model.CameraModel;
 
+import dte.alvaroluismartinez.finalapp.SplashActivity;
+
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
     //View Components
@@ -82,13 +84,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private final String URL_KML_CAMERAS = "http://informo.madrid.es/informo/tmadrid/CCTV.kml";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
+        setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         //Toolbar
         mTopToolbar = findViewById(R.id.my_toolbar);
-        mTopToolbar.setTitleTextColor(Color.WHITE);
+        //mTopToolbar.setTitleTextColor(Color.WHITE);
+        //mTopToolbar.setSubtitleTextColor(Color.WHITE);
         setSupportActionBar(mTopToolbar);
 
         //Get toolbar Menu
@@ -104,9 +108,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         //Get ImageView
         image = (ImageView)findViewById(R.id.imageView);
-
-
-
 
         //Avoiding pushing Views when keyboard is shown
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
